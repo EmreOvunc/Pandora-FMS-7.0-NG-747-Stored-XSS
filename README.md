@@ -1,6 +1,9 @@
 # Pandora-FMS-7.0-NG-747-Stored-XSS
 A stored cross-site scripting (XSS) in Pandora FMS 7.0 NG 747 can result in an attacker performing malicious actions to users who open a maliciously crafted link or third-party web page. In addition, the existing XSS filter can be bypassed with the "<img" tag.
 
+Pandora FMS 7.0 NG747 and older versions are affected by this vulnerability.
+
+
 # PoC
 To exploit vulnerability, someone could use a POST request to '/pandora_console/ajax.php' by manipulating 'comment' parameter in the request body to impact users who open a maliciously crafted link or third-party web page.
 
